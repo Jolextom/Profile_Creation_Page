@@ -3,7 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS External Styling -->
+    <link rel="stylesheet" href="./style.css" />
     <title>Frontend Page Creation</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="profile_section grid">
+        <div class="profile_info_left">
+          <div class="single_info">
+            <span class="icon"
+              ><i class="fa fa-male" aria-hidden="true"></i
+            ></span>
+            <div>
+              <h4 class="uppercase">username</h4>
+              <h3>Jolextom</h3>
+            </div>
+          </div>
+          <div class="single_info">
+            <span class="icon"
+              ><i class="fa fa-road" aria-hidden="true"></i
+            ></span>
+            <div>
+              <h4 class="uppercase">track</h4>
+              <h3>Frontend</h3>
+            </div>
+          </div>
+        </div>
+        <div class="profile_picture_bg">
+          <img src="./images/profile.png" alt="jolextom" />
+        </div>
+        <div class="profile_info_right">
+          <div class="single_info">
+            <span class="icon"
+              ><i class="fa fa-calendar" aria-hidden="true"></i
+            ></span>
+            <div>
+              <h4 class="uppercase">day</h4>
+              <h3>Monday</h3>
+            </div>
+          </div>
+          <div class="single_info">
+            <span class="icon"
+              ><i class="fa fa-clock-o" aria-hidden="true"></i>
+            </span>
+            <div>
+              <h4 class="uppercase">time</h4>
+              <h3>8:00 PM</h3>
+            </div>
+          </div>
+        </div>
+        <div class="profile_info_others">
+          <div class="single_info">
+            <span class="icon"
+              ><i class="fa fa-github" aria-hidden="true"></i>
+            </span>
+            <div>
+              <h4 class="uppercase">github url</h4>
+              <h3>Link to GITHUB</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
