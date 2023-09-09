@@ -6,6 +6,8 @@
 
 :root {
   --small-text: 0.7rem;
+  --medium-text: 0.9rem;
+  --large-text: 1.1rem;
 }
 
 body {
@@ -92,8 +94,19 @@ a {
   grid-area: profile;
   position: relative;
 }
+
+.profile_picture_bg > .name {
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-size: var(--large-text);
+  background-color: white;
+  outline: 1px dotted lightcoral;
+}
+
 .profile_picture_bg > h5 {
-  bottom: 5%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #f0ffff;
@@ -116,6 +129,9 @@ a {
   padding: 0.5rem;
   background: white;
 }
+.single_info h3 {
+  font-size: var(--medium-text);
+}
 
 .social_links {
   width: 300px;
@@ -126,4 +142,20 @@ a {
   justify-content: start;
   align-items: start;
   row-gap: 3rem;
+}
+
+@media screen and (max-width: 45rem) {
+  .profile_section {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "profile"
+      "left"
+      "right"
+      "links";
+  }
+
+  .single_info {
+    width: 300px;
+  }
 }
