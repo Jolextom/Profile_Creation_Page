@@ -32,7 +32,7 @@
             ></span>
             <div class="gap">
               <h4 class="uppercase">username</h4>
-              <h3>Jolextom</h3>
+              <h3 data-testid="slackUserName">Jolextom</h3>
             </div>
           </div>
           <div class="single_info flex">
@@ -41,12 +41,14 @@
             ></span>
             <div class="gap">
               <h4 class="uppercase">track</h4>
-              <h3>Frontend</h3>
+              <h3 data-testid="myTrack">Frontend</h3>
             </div>
           </div>
         </div>
         <div class="profile_picture_bg">
-          <img src="./images/jolextom.png" alt="jolextom" />
+          
+            <img src="./images/jolextom.png" alt="jolextom" data-testid="slackDisplayImage" />
+         
           <h5 class="uppercase absolute">stage one</h3>
         </div>
         <div class="profile_info profile_info_right flex">
@@ -56,7 +58,7 @@
             ></span>
             <div class="gap">
               <h4 class="uppercase">day</h4>
-              <h3>Monday</h3>
+              <h3 data-testid="currentDayOfTheWeek">Monday</h3>
             </div>
           </div>
           <div class="single_info flex">
@@ -65,18 +67,18 @@
             </span>
             <div class="gap">
               <h4 class="uppercase">time</h4>
-              <h3>8:00 PM</h3>
+              <h3 data-testid="currentUTCTime">8:00 PM UTC</h3>
             </div>
           </div>
         </div>
         <div class="profile_info profile_info_others flex">
-          <div class="single_info flex">
+          <div class="single_info flex self_center">
             <span class="icon"
               ><i class="fa fa-github" aria-hidden="true"></i>
             </span>
-            <div class="gap">
+            <div class="gap"><a href="https://github.com/Jolextom/Profile_Creation_Page.git" data-testid=“githubURL>
               <h4 class="uppercase">github url</h4>
-              <h3>Link to GITHUB</h3>
+              <h3>Link to GITHUB REPO</h3></a> 
             </div>
           </div>
         </div>
