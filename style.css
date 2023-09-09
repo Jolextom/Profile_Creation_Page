@@ -11,6 +11,7 @@
 body {
   font-family: "Inter", sans-serif;
   height: 100vh;
+  background: url("https://img.freepik.com/free-vector/stylish-hexagonal-line-pattern-background_1017-19742.jpg?size=626&ext=jpg&ga=GA1.2.2139903689.1677492461&semt=ais");
 }
 
 img {
@@ -74,7 +75,8 @@ a {
   grid-template-columns: 150px 1fr 150px;
   grid-template-rows: auto auto;
   width: fit-content;
-  padding-block: 4rem;
+  padding: 4rem 2rem;
+
   /* padding-top: 1rem; */
   margin-top: 1rem;
   grid-template-areas:
@@ -109,7 +111,14 @@ a {
 .single_info {
   justify-content: start;
   font-size: var(--small-text);
-  padding-left: 2rem;
+  outline: 1px solid orange;
+  width: 150px;
+  padding: 0.5rem;
+  background: white;
+}
+
+.social_links {
+  width: 300px;
 }
 
 .profile_info {
